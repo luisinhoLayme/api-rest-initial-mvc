@@ -1,0 +1,30 @@
+{
+  "name": "rest-node-initial-mvc",
+  "version": "1.0.0",
+  "main": "./dist/app.js",
+  "description": "Api rest with node and express",
+  "type": "module",
+  "exports": "./dist/app.js",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/app.ts",
+    "build": "pkgroll --minify --clean-dist",
+    "start": "yarn build && node --env-file=.env dist/app.js"
+  },
+  "keywords": [],
+  "author": "Luisinho Dev",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "env-var": "^7.5.0",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "pkgroll": "^2.5.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
