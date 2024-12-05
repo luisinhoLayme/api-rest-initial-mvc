@@ -1,8 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import { envs } from './config/envs.config'
+import { envs, MongoDatabase } from './config'
 import { AppRouter } from './routes'
-import { MongoDatabase } from './config/mongo.config'
 
 const PORT = envs.PORT || 4000
 
